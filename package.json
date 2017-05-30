@@ -1,0 +1,29 @@
+{
+  "name": "webpack-test",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mimaaa/webpack-test.git"
+  },
+  "keywords": [],
+  "author": "Mirza van Meerwijk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mimaaa/webpack-test/issues"
+  },
+  "homepage": "https://github.com/Mimaaa/webpack-test#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
