@@ -87,8 +87,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js??ref--1-1!./main.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js??ref--1-1!./main.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js??ref--2-1!../node_modules/postcss-loader/lib/index.js??ref--1!./main.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js??ref--2-1!../node_modules/postcss-loader/lib/index.js??ref--1!./main.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -125,11 +125,12 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n    background: hotpink;\n    display: flex;\n}\n\n._2huKopl75N60gphOF_vFlU {\n    background: red;\n}\n", ""]);
+exports.push([module.i, "body {\n    display: flex;\n}\n\n._2huKopl75N60gphOF_vFlU {\n    background: #fff;\n}\n\n._1CXmWg8nvkgcm79VCi-3ZV {\n    background: hotpink;\n}\n", ""]);
 
 // exports
 exports.locals = {
-	"redButton": "_2huKopl75N60gphOF_vFlU"
+	"redButton": "_2huKopl75N60gphOF_vFlU",
+	"className": "_1CXmWg8nvkgcm79VCi-3ZV"
 };
 
 /***/ }),
