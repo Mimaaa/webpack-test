@@ -1,0 +1,8 @@
+body {
+    background: hotpink;
+    display: flex;
+}
+
+.redButton {
+    background: #FFF;
+}
