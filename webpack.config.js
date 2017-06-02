@@ -32,10 +32,17 @@ const productionConfig = merge([
   parts.extractCSS({
     use: ['css-loader', parts.autoprefix()],
   }),
+  parts.loadImages({
+    options: {
+      limit: 15000,
+      name: '[name].[ext]',
+    },
+  }),
 ]);
 
 const developmentConfig = merge([
   parts.loadCSS(),
+  parts.loadImages(),
   parts.devServer({
     // Customize host/port here if needed
     host: process.env.HOST,
